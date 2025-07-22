@@ -149,28 +149,6 @@ def profile():
 
 
 
-# import requests
-# import os
-
-# WEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY")
-
-# @app.route("/weather", methods=["GET"])
-# def weather():
-#     city = request.args.get("city", "Delhi")
-#     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={WEATHER_API_KEY}&units=metric"
-    
-#     response = requests.get(url)
-#     if response.status_code != 200:
-#         return jsonify({"error": "Failed to fetch weather"}), 500
-
-#     data = response.json()
-#     return jsonify({
-#         "temperature": data["main"]["temp"],
-#         "moisture": data.get("humidity", 0),
-#         "rainfall": data.get("rain", {}).get("1h", 0)
-#     })
-
-
 import os
 import requests
 from flask import request, jsonify
