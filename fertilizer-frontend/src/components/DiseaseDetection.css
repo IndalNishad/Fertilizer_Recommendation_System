@@ -1,0 +1,54 @@
+.disease {
+  padding: 80px 40px;
+  background-color: #ffffff;
+}
+.disease h2  {
+  text-align: center;
+  font-size: 2rem;
+  color: #1f4e1f;
+}
+.section.disease h1{
+  text-align: center;
+  font-size: 2rem;
+  color: #1f4e1f;
+}
+.disease p {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+.disease-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.upload-box {
+  border: 2px dashed #1f4e1f;
+  border-radius: 10px;
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+}
+.upload-btn {
+  background-color: #1f4e1f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.feature-box {
+  background-color: #f1fbf1;
+  padding: 15px 25px;
+  border-radius: 8px;
+  color: #1f4e1f;
+  font-weight: bold;
+}

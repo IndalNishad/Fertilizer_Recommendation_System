@@ -1,0 +1,60 @@
+.fertilizer {
+  background-color: #f1fbf1;
+  padding: 80px 40px;
+}
+
+.fertilizer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.fertilizer-text {
+  max-width: 600px;
+}
+
+.fertilizer-text h1 {
+  font-size: 2.5rem;
+  color: #1f4e1f;
+}
+
+.fertilizer-text p {
+  font-size: 1.1rem;
+  margin: 20px 0;
+}
+
+.fertilizer-text ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.fertilizer-action {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  min-width: 280px;
+   text-align: center;
+}
+
+.predict-btn {
+  background: linear-gradient(to right, #2ea44f, #228c34);
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 18px 35px;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.predict-note {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: #555;
+}
+link a{
+  color: aliceblue;
+}

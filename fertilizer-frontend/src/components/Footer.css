@@ -1,0 +1,33 @@
+.footerr {
+  background-color: #1f4e1f;
+  color: white;
+  padding: 40px;
+}
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-grid > div {
+  margin-bottom: 20px;
+  min-width: 200px;
+}
+.footer-grid h4 {
+  color: #7eff7e;
+  margin-bottom: 10px;
+}
+.footer-grid p {
+  padding: 5px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+hr {
+  margin-top: 20px;
+  border-color: #4caf50;
+}
+
+
+.ulli li{
+  list-style: none;
+  padding: 5px;
+}

@@ -1,0 +1,36 @@
+.about {
+  padding: 80px 40px;
+  background-color: #f7fcf7;
+  text-align: center;
+}
+.about h2 {
+  font-size: 2rem;
+  color: #1f4e1f;
+}
+.about p {
+  margin: 20px auto;
+  max-width: 700px;
+  color: #444;
+}
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.stat-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+.stat-box h3 {
+  font-size: 1.8rem;
+  color: #1f4e1f;
+}
+.stat-box p {
+  color: #444;
+  margin-top: 8px;
+}

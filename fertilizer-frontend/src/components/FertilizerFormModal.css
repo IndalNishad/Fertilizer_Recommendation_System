@@ -1,0 +1,224 @@
+/* .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  overflow-y: auto;
+}
+
+.modal-box {
+  background: #fff;
+  padding: 2rem;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.form-content input {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-content button {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  background-color: green;
+  color: white;
+  border: none;
+  font-size: 16px;
+}
+
+.result {
+  margin-top: 20px;
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 5px;
+} */
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  padding: 20px; /* Space from top/bottom */
+  overflow-y: auto; /* Enable scrolling if content exceeds viewport */
+}
+
+.modal-box {
+  background: #fff;
+  padding: 2rem;
+  width: 90%;
+  max-width: 500px;
+  max-height: 90vh; /* Ensure the modal never exceeds viewport height */
+  border-radius: 8px;
+  position: relative;
+  overflow-y: auto; /* Allow internal scrolling */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.close-button {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.form-content input,
+.form-content select,
+.form-content textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-content button {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-content button:hover {
+  background-color: #0b5f0b;
+}
+
+.result {
+  margin-top: 20px;
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+/* new added css */
+
+.weather-status {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: #2e7d32;
+}
+
+.weather-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.weather-retry-btn {
+  align-self: flex-start;
+  padding: 6px 12px;
+  font-size: 14px;
+  background: #2e7d32;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.weather-retry-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.weather-city-input {
+  display: flex;
+  gap: 8px;
+}
+
+.weather-city-input input {
+  flex: 1;
+  padding: 6px 8px;
+  font-size: 14px;
+}
+
+.weather-city-input button {
+  padding: 6px 12px;
+  font-size: 14px;
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+.weather-city-input button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+
+/* new added 2  */
+
+.weather-city-input {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-city-input input {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.weather-status {
+  font-size: 14px;
+  color: #2e7d32;
+  margin: 0;
+}
