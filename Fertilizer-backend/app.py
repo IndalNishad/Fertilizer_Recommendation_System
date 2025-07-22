@@ -5,10 +5,19 @@ from auth import auth
 from db import db  #  import database
 import joblib
 from datetime import datetime  # import datetime
+from dotenv import load_dotenv
+import os
+import requests
+from flask import request, jsonify
+
+load_dotenv()
+
+WEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY")  # set in Render env
+
 
 app = Flask(__name__)
 CORS(app)
-app.config["JWT_SECRET_KEY"] = "super-secret"  # Use environment variable in production
+app.config['JWT_SECRET_KEY'] = os.getenv("JWT_SECRET_KEY", "default_secret")  # Use environment variable in production
 jwt = JWTManager(app)
 
 app.register_blueprint(auth)
@@ -149,11 +158,7 @@ def profile():
 
 
 
-import os
-import requests
-from flask import request, jsonify
 
-WEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY")  # set in Render env
 
 @app.route("/weather", methods=["GET"])
 def get_weather():
