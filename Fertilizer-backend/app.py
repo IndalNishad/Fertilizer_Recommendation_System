@@ -16,7 +16,9 @@ WEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY")  # set in Render env
 
 
 app = Flask(__name__)
-CORS(app)
+# CORS(app)
+
+CORS(app, resources={r"/*": {"origins": "*"}})
 app.config['JWT_SECRET_KEY'] = os.getenv("JWT_SECRET_KEY", "default_secret")  # Use environment variable in production
 jwt = JWTManager(app)
 
