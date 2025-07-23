@@ -20,7 +20,7 @@ const LoginModal = ({ isOpen, onClose }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/login", form);
+      const res = await axios.post("https://fertilizer-recommendation-system-rova.onrender.com/login", form);
       localStorage.setItem("token", res.data.access_token);
       onClose(); // Close login modal
       window.location.href = "/"; // ✅ or use navigate()
