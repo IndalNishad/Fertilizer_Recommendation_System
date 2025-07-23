@@ -8,7 +8,7 @@ const Stats = () => {
   useEffect(() => {
     const token = localStorage.getItem("token");
     axios
-      .get("http://localhost:5000/stats", {
+      .get("https://fertilizer-recommendation-system-rova.onrender.com/stats", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => {
