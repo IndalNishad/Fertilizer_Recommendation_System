@@ -12,7 +12,7 @@ const RegisterModal = ({ isOpen, onClose, onSwitchToLogin }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/register", form);
+      await axios.post("https://fertilizer-recommendation-system-rova.onrender.com/register", form);
       // console.log(form);
       alert("Registration successful! Please login.");
       onSwitchToLogin(); // ✅ Switch back to Login after registration
