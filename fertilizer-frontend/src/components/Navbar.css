@@ -201,13 +201,13 @@ a {
   cursor: pointer;
 }
 
-/* .hamburger span {
+.hamburger span {
   width: 25px;
   height: 3px;
   background: white;
   border-radius: 2px;
   transition: 0.3s;
-} */
+}
 
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translateY(8px);
