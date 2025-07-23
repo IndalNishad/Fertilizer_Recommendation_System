@@ -1,0 +1,17 @@
+# Git ignore 
+# Node.js dependencies
+fertilizer-frontend/node_modules/
+
+# Python virtual environment
+Fertilizer-backend/venv/
+
+# Environment variables
+.env
+
+# Build output
+fertilizer-frontend/build/
+fertilizer-frontend/dist/
+
+# IDE/editor files
+.vscode/
+*.log

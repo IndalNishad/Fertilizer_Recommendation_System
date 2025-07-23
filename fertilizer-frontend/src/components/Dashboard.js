@@ -79,7 +79,8 @@ const Dashboard = () => {
 
   const handleLogout = () => {
     localStorage.removeItem("token");
-    navigate("/login");
+    setUser(null);
+    navigate("/");
   };
 
   // Transform stats for chart (rename keys)
