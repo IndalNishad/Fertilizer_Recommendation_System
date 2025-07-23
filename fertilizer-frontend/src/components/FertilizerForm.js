@@ -34,7 +34,7 @@ const [soils, setSoils] = useState([]);
   
 
     try {
-      const res = await axios.post("http://localhost:5000/predict", formData, {
+      const res = await axios.post("https://fertilizer-recommendation-system-rova.onrender.com/predict", formData, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setResult(res.data.recommended_fertilizer);
@@ -50,7 +50,7 @@ const [soils, setSoils] = useState([]);
    const fetchStats = async () => {
     const token = localStorage.getItem("token");
     try {
-      const res = await axios.get("http://localhost:5000/stats", {
+      const res = await axios.get("https://fertilizer-recommendation-system-rova.onrender.com/stats", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -72,7 +72,7 @@ const [soils, setSoils] = useState([]);
 
   const fetchAllowedValues = async () => {
   try {
-    const res = await axios.get("http://localhost:5000/allowed-values");
+    const res = await axios.get("https://fertilizer-recommendation-system-rova.onrender.com/allowed-values");
     setCrops(res.data.crops);
     setSoils(res.data.soils);
   } catch (err) {
