@@ -35,7 +35,7 @@ const Dashboard = () => {
 
     setLoadingUser(true);
     axios
-      .get("http://localhost:5000/profile", {
+      .get("https://fertilizer-recommendation-system-rova.onrender.com/profile", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => {
@@ -61,7 +61,7 @@ const Dashboard = () => {
 
     setLoadingStats(true);
     axios
-      .get("http://localhost:5000/stats", {
+      .get("https://fertilizer-recommendation-system-rova.onrender.com/stats", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => {
