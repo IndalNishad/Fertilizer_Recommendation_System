@@ -25,7 +25,7 @@ function Fertilizer() {
     // Optional: verify token w/ backend before showing form
     setCheckingAuth(true);
     try {
-      await axios.get("http://localhost:5000/profile", {
+      await axios.get("https://fertilizer-recommendation-system-rova.onrender.com/profile", {
         headers: { Authorization: `Bearer ${token}` },
       });
       // Token valid
