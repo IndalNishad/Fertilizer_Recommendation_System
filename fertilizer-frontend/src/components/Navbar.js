@@ -20,7 +20,7 @@ const Navbar = () => {
   useEffect(() => {
     if (token) {
       axios
-        .get("http://localhost:5000/profile", {
+        .get("https://fertilizer-recommendation-system-rova.onrender.com/profile", {
           headers: { Authorization: `Bearer ${token}` },
         })
         .then((res) => {
